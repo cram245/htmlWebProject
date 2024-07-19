@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Humanist Clinic</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+    <header class="header header-products">
+        <nav class="navbar">
+            <div class="container">
+                <div class="navbar-brand">Humanist Clinic</div>
+                <div class="navbar-menu">
+                    <a class="nav-btn" href="index.html">HOME</a>
+                    <a class="nav-btn" href="#our-clinic">OUR CLINIC</a>
+                    <a class="nav-btn" href="#departments">DEPARTMENTS</a>
+                    <a class="nav-btn" href="#team">TEAM</a>
+                    <a class="nav-btn" href="#news">NEWS</a>
+                    <a class="nav-btn" href="products.html">PRODUCTS</a>
+                    <a class="nav-btn active" href="contact.html">CONTACT</a>
+                </div>
+            </div>
+        </nav>
+        <div class="header-content-products">
+            <img src="images/logo.png" alt="logo">
+            <p>Your health is our goal. Humanist clinic</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <h2 class="h2-underlined">Contact us</h2>
+        <div class="main-flex">
+            <aside class="left-tab">
+                <h3>Recent News</h3>
+                <div class="news">
+                    <img src="images/news-1.jpg" alt="doctor">
+                    <div class="news-info">
+                        <p>I have toenail fungus, what should I do?</p>
+                        <p class="date">12 February 2024</p>
+                    </div>
+                </div>
+                <div class="news">
+                    <img src="images/news-2.jpg" alt="kiwi smoothie">
+                    <div class="news-info">
+                        <p>Benefits of kiwi on gastrointestinal health</p>
+                        <p class="date">25 February 2022</p>
+                    </div>
+                </div>
+                <div class="news">
+                    <img src="images/news-3.jpg" alt="kid walking with his parent">
+                    <div class="news-info">
+                        <p>What your feet tell you about your state of health</p>
+                        <p class="date">14 February 2024</p>
+                    </div>
+                </div>
+                <p><b>Our social media</b></p>
+				<div class="social-media in-a-row">
+					<div class="instagram">
+						<i class="fa-brands fa-instagram"></i>
+					</div>
+					<div class="facebook">
+						<i class="fa-brands fa-facebook-f"></i>
+					</div>
+					<div class="tiktok">
+						<i class="fa-brands fa-tiktok"></i>
+					</div>
+					<div class="linkedin">
+						<i class="fa-brands fa-linkedin-in"></i>
+					</div>
+					<div class="twitter">
+						<i class="fa-brands fa-twitter"></i>
+					</div>
+				</div>
+            </aside>
+
+            <div class="direct-message-tab">
+                <h3 class="bigger-h3">Send a Direct Message</h3>
+                <p>Fields with <span>*</span> are required:</p>
+
+                <form action="#" method="post">
+                    <fieldset>
+                        <legend>Personal information</legend>
+                        <div class="form-line">
+                            <div class="form-group">
+                                <label for="name">Your Name: <span>*</span></label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="surname">Your Surname: <span>*</span></label>
+                                <input type="text" id="surname" name="surname" required>
+                            </div>
+                        </div>
+
+                        <div class="form-line">
+                            <div class="form-group">
+                                <label for="phone">Phone:</label>
+                                <input type="text" id="phone" name="phone">
+                            </div>
+                            <div class="form-group">
+                                <label>Sex:</label>
+
+                                <div class="radio-types">
+                                    <input type="radio" id="woman" name="sex" value="woman">
+                                    <label for="woman">Woman</label>
+                                    <input type="radio" id="man" name="sex" value="man">
+                                    <label for="man">Man</label>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="form-line">
+
+                            <div class="form-group">
+                                <label for="town">Town:</label>
+                                <input type="text" id="town" name="town">
+                            </div>
+                            <div class="form-group">
+                                <label for="country">Country:</label>
+                                <input type="text" id="country" name="country">
+                            </div>
+                        </div>
+                        <div>
+                            <label for="email">Email Address: <span>*</span></label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>What does it mean to us?</legend>
+                        <label for="subject">Subject:</label>
+                        <select id="subject" name="subject">
+                            <option value="appointment">Request an appointment</option>
+                            <option value="askForInfo">Know more about a product</option>
+                            <option value="askAboutGastro">Know how to improve my gastrointestinal health</option>
+                            <option value="askAboutLoseWeight">Information on how to lose weight</option>
+                            <option value="moreOptions">Another questions</option>
+                        </select>
+
+                        <label for="message">Your message:</label>
+                        <textarea id="message" name="message"></textarea>
+                    </fieldset>
+
+                    <label for="terms">
+                        <input type="checkbox" id="terms" name="terms" required>
+                        I have read and accept the <a href="#">terms and conditions of use</a>. <span>*</span>
+                    </label>
+
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <div class="left">
+                        <h2>Humanist clinic</h2>
+                    </div>
+                    <div class="footer-section right">
+                        <h3>Menu</h3>
+                        <ul>
+                            <li><a href="#about-us">About Us</a></li>
+                            <li><a href="#products">Products</a></li>
+                            <li><a href="#news">News</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer-right">
+                    <div class="footer-section left">
+                        <h3>Services</h3>
+                        <ul>
+                            <li><a href="#">Our Clinic</a></li>
+                            <li><a href="#">Departments</a></li>
+                            <li><a href="#">Team</a></li>
+                            <li><a href="#">See More</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section right">
+                        <h3>Contact</h3>
+                        <p>+00 (123) 765 8765 <i class="fa-solid fa-phone"></i></p>
+                        <p>myName@domain.com <i class="fa-solid fa-envelope"></i></p>
+                        <p>Monday-Saturday <i class="fa-solid fa-clock"></i></p>
+                        <p>14.00am-18.00pm</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>All photographs come from <b>PxHere</b> with a <abbr title="Creative Commons Zero">CC0</abbr> license.</p>
+                <nav>
+                    <ul>
+                        <li><a href="#terms">Terms of Use</a></li>
+                        <li><a href="#privacy">Privacy Policy</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
